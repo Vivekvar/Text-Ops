@@ -1,2 +1,2 @@
 # Text-Ops
-A text operation tool made with React.
+A text operation tool made with React.js
