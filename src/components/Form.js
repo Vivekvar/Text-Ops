@@ -32,8 +32,8 @@ export default function Form(props) {
                 <button className="btn btn-danger mx-3" onClick={ handleClearClick }>Clear Text</button>
                 <button className="btn btn-secondary" onClick={ handleCopyClick }>Copy Text</button>
             </div>
-            <div className={`container text-${props.theme==='light'?'dark':'light'}`}>
-                <h1 className='my-3'>Text Specs: </h1>
+            <div className={`container text-${props.theme==='light'?'dark':'light'}`} style={{fontSize:"20px"}}>
+                <h1 className='my-3'>Text Specifications: </h1>
                 <p>Total number of Words in your text: { text.split(" ").filter(word => word.length !== 0).length }</p>
                 <p>Total number of Characters in your text: { text.length }</p>
                 <p>Average Read Time in Minutes: { 0.008 * text.split(" ").filter(word => word.length !== 0).length }</p>
