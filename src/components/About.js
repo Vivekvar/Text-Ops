@@ -17,7 +17,7 @@ export default function About(props) {
                 <li><b>Copy Text</b></li>
                 <li><b>Count number of characters in the text</b></li>
                 <li><b>Count number of words in the text</b></li>
-                <li><b>Average Read time of the text</b></li>
+                <li><b>Average Read Time of the text</b></li>
             </ol>
           </div>
           <div>
@@ -29,5 +29,5 @@ export default function About(props) {
       </div>
     </div>
   )
-  
+
 }
