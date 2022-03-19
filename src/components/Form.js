@@ -6,26 +6,35 @@ export default function Form(props) {
     }
     const handleUpClick = () => {
         setText(text.toUpperCase());
+        props.handleAlert("Text Changed to Upperacase", "success");
     }
     const handleLowClick = () => {
         setText(text.toLowerCase());
+        props.handleAlert("Text Changed to Loweracase", "success");
     }
     const handleClearClick = () => {
         setText("");
+        props.handleAlert("Text Cleared", "success");
     }
     const handleRemoveSpaceClick = () => {
         setText(text.split(" ").filter(word => word.length !== 0).join(" "));
+        props.handleAlert("Extra Spaces Removed", "success");
     }
     const handleCopyClick = () => {
         let text = document.getElementById("textBox");
         navigator.clipboard.writeText(text.value);
+        props.handleAlert("Text Copied to ClipBoard", "success");
     }
     const [text, setText] = useState("")
+    const myStyle = {
+        color:`${props.theme==='light'?'black':'white'}`,
+        backgroundColor:`${props.theme==='light'?'white':'black'}`
+    }
     return (
         <>
             <div className={`my-5 container text-${props.theme==='light'?'dark':'light'}`}>
                 <label htmlFor="textBox" className="form-label"><h1>{ props.heading }</h1></label>
-                <textarea className="form-control mt-3" style={{color:`${props.theme==='light'?'black':'white'}`, backgroundColor:`${props.theme==='light'?'white':'black'}`}} value={ text } onChange={ handleOnChange } id="textBox" rows="10"></textarea>
+                <textarea className="form-control mt-3" style={myStyle} value={ text } onChange={ handleOnChange } id="textBox" rows="10"></textarea>
                 <button className="btn btn-primary my-3" onClick={ handleUpClick }>Convert to Uppercase</button>
                 <button className="btn btn-info mx-3" onClick={ handleLowClick }>Convert to Lowercase</button>
                 <button className="btn btn-success" onClick={ handleRemoveSpaceClick }>Remove Extra Spaces</button>

@@ -9,16 +9,16 @@ export default function Footer(props) {
         bottom:"0",
         borderTop:"2px solid black"
     }
-  return (
-    <div className="d-flex justify-content-center footer mt-5" style={myStyle}>
-        <div className="my-3">
-            <div>
-                Made with &#10084; by VIVEK VARSHNEY
-            </div>
-            <div style={{paddingLeft:"35px"}}>
-                &#169; 2022 All Rights Reserved
+    return (
+        <div className="d-flex justify-content-center footer mt-5" style={myStyle}>
+            <div className="my-3">
+                <div>
+                    Made with &#10084; by VIVEK VARSHNEY
+                </div>
+                <div style={{paddingLeft:"35px"}}>
+                    &#169; 2022 All Rights Reserved
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
