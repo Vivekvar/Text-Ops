@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Footer(props) {
+
     const myStyle = {
         color:`${props.theme==='light'?'#212529':'white'}`,
         backgroundColor:`${props.theme==='light'?'white':'#212529'}`,
@@ -9,6 +10,7 @@ export default function Footer(props) {
         bottom:"0",
         borderTop:"2px solid black"
     }
+
     return (
         <div className="d-flex justify-content-center footer mt-5" style={myStyle}>
             <div className="my-3">
@@ -21,4 +23,5 @@ export default function Footer(props) {
             </div>
         </div>
     )
+    
 }

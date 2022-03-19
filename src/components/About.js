@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function About(props) {
+
   return (
     <div className={`my-5 container text-${props.theme==='light'?'dark':'light'}`}>
       <h1 className="mb-3">Text Ops</h1>
@@ -28,4 +29,5 @@ export default function About(props) {
       </div>
     </div>
   )
+  
 }
