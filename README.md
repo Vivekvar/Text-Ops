@@ -1,21 +1,21 @@
 <h1>Text Ops</h1>
 <br>
-Text Ops is a tool which can be used to operate text i.e., perform many operations on text.
+Text Ops is a tool made using <b>React</b>, which can be used to operate text i.e., perform many operations on text.
 <br>
 <br>
 For example:
 <ol>
-<li>Convert to Uppercase</li>
-<li>Convert to Lowercase</li>
-<li>Remove Extra Spaces</li>
-<li>Clear Text</li>
-<li>Copy Text</li>
-<li>Count number of characters in the text</li>
-<li>Count number of words in the text</li>
-<li>Average Read Time of the text</li>
+<li><b>Convert to Uppercase</b></li>
+<li><b>Convert to Lowercase</b></li>
+<li><b>Remove Extra Spaces</b></li>
+<li><b>Clear Text</b></li>
+<li><b>Copy Text</b></li>
+<li><b>Count number of characters in the text</b></li>
+<li><b>Count number of words in the text</b></li>
+<li><b>Average Read Time of the text</b></li>
  <ol>
 <br>
 <br>
-Moreover, a dark mode is also present, to provide convenience to users.
+Moreover, a <b>dark mode</b> is also present, to provide convenience to users.
 <br>
 This is a free website and can be used by anyone for their personal use.
